@@ -1,0 +1,10 @@
+{
+    "author": "Antoni Boucher",
+    "description": "Check wether a website is down or not when Firefox cannot load a page",
+    "fullName": "Down for Everyone or Just me",
+    "icon": "data/icon-48.png",
+    "id": "jid1-BQlYZao7HHmGLw",
+    "license": "GNU GPL v3",
+    "name": "downforeveryoneorjustme",
+    "version": "1.0"
+}

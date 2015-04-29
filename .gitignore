@@ -1,0 +1,13 @@
+_build
+_tags
+*.xpi
+./lib
+setup.data
+setup.log
+setup.ml
+test
+META
+*.mldylib
+*.mllib
+*.swp
+*.js

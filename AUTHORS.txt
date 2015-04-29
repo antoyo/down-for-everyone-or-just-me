@@ -1,0 +1,8 @@
+(* OASIS_START *)
+(* DO NOT EDIT (digest: db503aab2cfcfe5b508607427ead1f3d) *)
+
+Authors of down-for-everyone:
+
+* Antoni Boucher
+
+(* OASIS_STOP *)

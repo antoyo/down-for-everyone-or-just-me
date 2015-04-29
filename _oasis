@@ -1,0 +1,28 @@
+OASISFormat:            0.4
+Name:                   down-for-everyone
+Version:                0.1
+Synopsis:               Down for Everyone or Just me
+Authors:                Antoni Boucher
+License:                LGPL-3
+Plugins:                META (0.4), StdFiles (0.4)
+OCamlVersion:           >= 4.01
+AlphaFeatures:          ocamlbuild_more_args
+XOCamlbuildPluginTags:  package(js_of_ocaml.ocamlbuild)
+PostBuildCommand:       cp ./_build/src/lib/main.js ./lib; cp ./_build/src/data/down.js ./data
+
+Library utils
+    Path:           src
+    BuildTools:     ocamlbuild
+    Modules:        StringUtils
+
+Executable down
+    BuildDepends:   addonsdk, utils
+    BuildTools:     ocamlbuild
+    MainIs:         main.ml
+    Path:           src/lib
+
+Executable downscript
+    BuildDepends:   addonsdk.contentscript, js_of_ocaml, js_of_ocaml.syntax, utils
+    BuildTools:     ocamlbuild
+    MainIs:         down.ml
+    Path:           src/data
